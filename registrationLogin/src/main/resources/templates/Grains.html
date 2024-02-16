@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Organic Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style.css" />
+     <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>
+     <linl rel="stylesheet" type="text/css" th:href="@{../static/style.css}"/>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <!---<span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>-->
+            </div>
+            <ul class="menu-items">
+                <li><a th:href="@{/mainPage}">Home</a></li>
+                <li><a th:href="@{/types/fruit}">Fruit</a></li>
+                <li><a th:href="@{/types/vegetables}">vegitable</a></li>
+                 <li><a th:href="@{/suggestions}">Suggestions</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+                <li> <a th:href="@{/logout}">Logout</a></li>
+                <!--    <li><a href="#food-menu">Menu</a></li>
+                
+                <li><a href="#contact">Contact</a></li>-->
+            </ul>
+            <h1 class="logo">Org#Food</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healty, it is good for our health.</p>
+            <!-- <a href="#food-menu" class="btn btn-primary">Menu</a>-->
+        </div>
+    </section>
+
+    </section>
+    <section id="food-menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="C:\Users\Dell\OneDrive\Pictures\Saved Pictures\Broccoli.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Broccoli & Cheez</h2>
+                    <p>
+                        blanched broccoli topped with our jack cheez (contains nut), nutritional yeast, and paprika
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="C:\Users\Dell\OneDrive\Pictures\Saved Pictures\Nacho.jpg" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Nacho Plate</h2>
+                    <p>
+                        Local canola-free Mi Nina organic tortilla chips, vegan cheddar, guacamole, pico de gallo, black
+                        beans,
+                        cashew cream sauce, and scallion with house-made hot sauce & jack cheese sauce
+                    </p>
+                    <p class="food-price">Price: &#8377; 310</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="C:\Users\Dell\OneDrive\Pictures\Saved Pictures\Avocado Toast.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Avocado Toast</h2>
+                    <p>
+                        smashed avocado, olive oil, sea salt, lemon w tomato, + everything bagel blend
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="C:\Users\Dell\OneDrive\Pictures\Saved Pictures\Caesar Salad.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Caesar Salad w/ Grilled Tofu</h2>
+                    <p>
+                        baby greens and baby kale, millet croutons (contains gluten), tomato, cashew Caesar dressing,
+                        vegan ‘parmesan’ (brazil nut, pumpkin seed, nutritional yeast)
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="C:\Users\Dell\OneDrive\Pictures\Saved Pictures\Baked Mac 'N Cheese.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Baked Mac 'N Cheese</h2>
+                    <p>
+                        Gluten free pasta is tossed with broccoli and a cheesey cashew sauce, with Deland millet crouton
+                        bread crumbs (contains gluten) ,
+                        Sun-dried Tomato & nutritional yeast; then baked sauce: Cashews, nutritional yeast, lemon juice,
+                        water, garlic, garlic powder, tumeric, black pepper, salt, cayenne
+                        Sun-dried tomatoes are marinated with garlic, Italian herbs, and olive oil
+                    </p>
+                    <p class="food-price">Price: &#8377; 380</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="C:\Users\Dell\OneDrive\Pictures\Saved Pictures\Sesame Ginger Salad.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Sesame Ginger Salad</h2>
+                    <p>
+                        baby greens, avocado, bean sprouts, teriyaki almonds,
+                        cabbage, and bell peppers with sesame ginger dressing.
+                    </p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <br /><br /><br />
+    <footer id="footer">
+        <h2>Restaurant &copy; all rights reserved</h2> <a href="logout">Logout</a>
+    </footer>
+
+</body>
+
+</html>

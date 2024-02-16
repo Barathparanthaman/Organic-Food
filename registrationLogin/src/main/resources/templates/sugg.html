@@ -1,0 +1,71 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	
+	<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Other's Suggestions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style.css" />
+     <linl rel="stylesheet" type="text/css" th:href="@{../static/style.css}"/>
+     <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>
+</head>
+	
+	
+	<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <!---<span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>-->
+            </div>
+            <ul class="menu-items">
+                   <li><a th:href="@{/mainPage#home}">Home</a></li>
+                <li><a th:href="@{/suggestion/fruit}">Fruit</a></li>
+                <li><a th:href="@{/suggestion/vegetable}">Vagetables</a></li>
+                <li><a th:href="@{/suggestion/grains}"> Grains </a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+                <li> <a th:href="@{/logout}">Logout</a></li>
+                <!--    <li><a href="#food-menu">Menu</a></li>
+                
+                <li><a href="#contact">Contact</a></li>-->
+            </ul>
+            <h1 class="logo">Org#Food</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healty, it is good for our health.</p>
+            <!-- <a href="#food-menu" class="btn btn-primary">Menu</a>-->
+        </div>
+    </section>
+     <section id="food-menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+			
+            <div class="food-menu-item" style="display:block;">
+                <!--<div class="food-img">
+                    <img src="C:\Users\Dell\OneDrive\Pictures\Saved Pictures\Broccoli.jpg" alt="" />
+                </div>-->
+                <div class="food-description" th:each="suggestion:${allSuggestions}">
+                    <h2 class="food-titile" th:text="${suggestion.usename}">FullName</h2>
+                    <p th:text="${suggestion.message}">
+                        <!--blanched broccoli topped with our jack cheez (contains nut), nutritional yeast, and paprika-->
+                    </p>
+                    <p class="food-price" th:text="${suggestion.Email}">EmailId</p>
+                </div><br/><br/>
+            </div>
+            </div>
+    </section>
+     <footer id="footer">
+        <h2>Restaurant &copy; all rights reserved</h2> <a href="logout">Logout</a>
+    </footer>
+    </body>
+
+	
+</html>
